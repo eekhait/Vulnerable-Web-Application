@@ -13,7 +13,7 @@ Application.git'
                script { 
                 def scannerHome = tool 'SonarQube'; 
                    withSonarQubeEnv('SonarQube') { 
-                   sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=OWSAP -
+                   sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=OWASP -
 Dsonar.sources=." 
                    } 
                } 
