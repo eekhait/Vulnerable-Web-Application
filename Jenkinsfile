@@ -8,11 +8,7 @@ pipeline {
         } 
         stage ('haha') { 
             steps { 
-                sh "sonar-scanner \
-  -Dsonar.projectKey=OWASP \
-  -Dsonar.sources=. \
-  -Dsonar.host.url=http://localhost:9000 \
-  -Dsonar.login=b018a400139230be612732930fa0ee0cad8a1d99"
+                sh "sonar-scanner.bat -D"sonar.projectKey=OWASP" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.login=b018a400139230be612732930fa0ee0cad8a1d99""
             } 
         } 
          
